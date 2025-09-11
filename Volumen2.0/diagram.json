@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "author": "VALERIA ALEJANDRA HOYOS TOVAR",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 35.4, "left": -314, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 269.4, "left": -39, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 115.1,
+      "left": 176.3,
+      "rotate": 90,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 115.1,
+      "left": 118.7,
+      "rotate": 90,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 115.1,
+      "left": -54.1,
+      "rotate": 90,
+      "attrs": { "color": "red", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": 115.1,
+      "left": 13.1,
+      "rotate": 90,
+      "attrs": { "color": "red", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "bb1:bn.31", "black", [ "v0" ] ],
+    [ "bb1:bn.50", "bb1:tn.50", "green", [ "v0" ] ],
+    [ "bb1:tp.31", "bb1:tp.30", "green", [ "v0" ] ],
+    [ "bb1:tn.31", "bb1:tn.30", "green", [ "v0" ] ],
+    [ "bb1:tn.26", "bb1:tn.25", "green", [ "v0" ] ],
+    [ "bb1:tn.21", "bb1:tn.20", "green", [ "v0" ] ],
+    [ "bb1:bn.35", "bb1:bn.36", "green", [ "v0" ] ],
+    [ "btn1:1.l", "bb1:54t.c", "", [ "$bb" ] ],
+    [ "btn1:2.l", "bb1:52t.c", "", [ "$bb" ] ],
+    [ "btn1:1.r", "bb1:54b.h", "", [ "$bb" ] ],
+    [ "btn1:2.r", "bb1:52b.h", "", [ "$bb" ] ],
+    [ "btn2:1.l", "bb1:48t.c", "", [ "$bb" ] ],
+    [ "btn2:2.l", "bb1:46t.c", "", [ "$bb" ] ],
+    [ "btn2:1.r", "bb1:48b.h", "", [ "$bb" ] ],
+    [ "btn2:2.r", "bb1:46b.h", "", [ "$bb" ] ],
+    [ "btn3:1.l", "bb1:30t.c", "", [ "$bb" ] ],
+    [ "btn3:2.l", "bb1:28t.c", "", [ "$bb" ] ],
+    [ "btn3:1.r", "bb1:30b.h", "", [ "$bb" ] ],
+    [ "btn3:2.r", "bb1:28b.h", "", [ "$bb" ] ],
+    [ "bb1:30b.i", "uno:5", "green", [ "v76.8", "h182.4" ] ],
+    [ "bb1:37b.i", "uno:4", "green", [ "v57.6", "h115.2" ] ],
+    [ "bb1:28b.i", "bb1:bn.22", "green", [ "v0" ] ],
+    [ "btn4:1.l", "bb1:37t.c", "", [ "$bb" ] ],
+    [ "btn4:2.l", "bb1:35t.c", "", [ "$bb" ] ],
+    [ "btn4:1.r", "bb1:37b.h", "", [ "$bb" ] ],
+    [ "btn4:2.r", "bb1:35b.h", "", [ "$bb" ] ],
+    [ "bb1:35b.i", "bb1:bn.28", "green", [ "v0" ] ],
+    [ "bb1:46b.i", "bb1:bn.37", "green", [ "v0" ] ],
+    [ "bb1:52b.i", "bb1:bn.42", "green", [ "v0" ] ],
+    [ "bb1:48b.i", "uno:3", "green", [ "v67.2", "h19.2" ] ],
+    [ "bb1:54b.i", "uno:2", "green", [ "v76.8", "h-28.8" ] ]
+  ],
+  "dependencies": {}
+}
